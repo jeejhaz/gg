@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Procurement Hub · Grab Merchant (Concept)</title>
+<title>Grabsource · Grab Merchant (Concept)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700;800&display=swap">
 <style>
 :root{--bg:#f2f4f3;--card:#fff;--tx:#14231b;--mu:#69776f;--bd:#e4e9e6;--g:#00b14f;--g2:#e3f7ec;--gd:#007a37;--o:#e8590c;--o2:#fff0e6;--y:#fff6d6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -85,7 +85,7 @@ $('#app').innerHTML=V[S.tab]();window.scrollTo(0,0);
 if(S.tab=='home')filt('');if(S.tab=='tool')upT()}
 const V={
 home(){const pend=S.ord.reduce((a,o)=>a+o.sv,0),real=S.base.sv,goal=1500;
-return hdr('GRAB MERCHANT · CONCEPT','Procurement Hub','ซื้อวัตถุดิบคุ้มขึ้นสำหรับร้านของคุณ')+`<div class="pad">
+return hdr('GRAB MERCHANT · CONCEPT','Grabsource','ซื้อวัตถุดิบคุ้มขึ้นสำหรับร้านของคุณ')+`<div class="pad">
 <div class="card"><div class="s">เป้าหมายการประหยัดเดือนนี้</div><div class="big">${F(goal)}</div>
 <div class="bar"><i style="width:${Math.min(100,(real+pend)/goal*100)}%"></i></div>
 <div class="two" style="margin-top:8px"><div class="k"><small>ประหยัดแล้ว <span class="tag g">จริง</span></small><b>${F(real)}</b></div><div class="k"><small>รอจัดส่ง <span class="tag">ประมาณการ</span></small><b>${F(pend)}</b></div></div>
